@@ -20,16 +20,18 @@ function Particle() {
           },
           move: {
             direction: "right",
-            speed: 0.05,
+            speed: 2,       // ← slowed down from 0.05
           },
           size: {
             value: 1,
           },
           opacity: {
+            value: 0.5,
             anim: {
               enable: true,
-              speed: 1,
+              speed: 2,        // ← slowed down from 1
               opacity_min: 0.05,
+              sync: false,
             },
           },
         },
